@@ -59,23 +59,23 @@ Functions from the standard C library, recoded from scratch.
 #### String Functions
 
 | **ft_strlen** | `size_t ft_strlen(const char *s)` | Calculates the length of a string |<br>
-| **ft_strchr** | `char *ft_strchr(const char *s, int c)` | Locates first occurrence of character in string |<br><br><br>
-| **ft_strrchr** | `char *ft_strrchr(const char *s, int c)` | Locates last occurrence of character in string |<br><br><br>
-| **ft_strncmp** | `int ft_strncmp(const char *s1, const char *s2, size_t n)` | Compares two strings up to n characters |<br><br><br>
-| **ft_strnstr** | `char *ft_strnstr(const char *big, const char *little, size_t len)` | Locates substring in string (size-bounded) |<br><br><br>
-| **ft_strlcpy** | `size_t ft_strlcpy(char *dst, const char *src, size_t size)` | Copies string to destination (size-bounded) |<br><br><br>
-| **ft_strlcat** | `size_t ft_strlcat(char *dst, const char *src, size_t size)` | Concatenates strings (size-bounded) |<br><br><br>
-| **ft_strdup** | `char *ft_strdup(const char *s)` | Duplicates a string (allocates memory) |<br><br><br>
+| **ft_strchr** | `char *ft_strchr(const char *s, int c)` | Locates first occurrence of character in string |<br>
+| **ft_strrchr** | `char *ft_strrchr(const char *s, int c)` | Locates last occurrence of character in string |<br>
+| **ft_strncmp** | `int ft_strncmp(const char *s1, const char *s2, size_t n)` | Compares two strings up to n characters |<br>
+| **ft_strnstr** | `char *ft_strnstr(const char *big, const char *little, size_t len)` | Locates substring in string (size-bounded) |<br>
+| **ft_strlcpy** | `size_t ft_strlcpy(char *dst, const char *src, size_t size)` | Copies string to destination (size-bounded) |<br>
+| **ft_strlcat** | `size_t ft_strlcat(char *dst, const char *src, size_t size)` | Concatenates strings (size-bounded) |<br>
+| **ft_strdup** | `char *ft_strdup(const char *s)` | Duplicates a string (allocates memory) |<br>
 
 #### Memory Functions
 
-| **ft_memset** | `void *ft_memset(void *s, int c, size_t n)` | Fills memory with a constant byte |<br><br>
-| **ft_bzero** | `void ft_bzero(void *s, size_t n)` | Sets memory to zero |<br><br>
-| **ft_memcpy** | `void *ft_memcpy(void *dest, const void *src, size_t n)` | Copies memory area |<br><br>
-| **ft_memmove** | `void *ft_memmove(void *dest, const void *src, size_t n)` | Copies memory area (handles overlap) |<br><br>
-| **ft_memchr** | `void *ft_memchr(const void *s, int c, size_t n)` | Locates byte in memory |<br><br>
-| **ft_memcmp** | `int ft_memcmp(const void *s1, const void *s2, size_t n)` | Compares memory areas |<br><br>
-| **ft_calloc** | `void *ft_calloc(size_t nmemb, size_t size)` | Allocates and zeroes memory |<br><br>
+| **ft_memset** | `void *ft_memset(void *s, int c, size_t n)` | Fills memory with a constant byte |<br>
+| **ft_bzero** | `void ft_bzero(void *s, size_t n)` | Sets memory to zero |<br>
+| **ft_memcpy** | `void *ft_memcpy(void *dest, const void *src, size_t n)` | Copies memory area |<br>
+| **ft_memmove** | `void *ft_memmove(void *dest, const void *src, size_t n)` | Copies memory area (handles overlap) |<br>
+| **ft_memchr** | `void *ft_memchr(const void *s, int c, size_t n)` | Locates byte in memory |<br>
+| **ft_memcmp** | `int ft_memcmp(const void *s1, const void *s2, size_t n)` | Compares memory areas |<br>
+| **ft_calloc** | `void *ft_calloc(size_t nmemb, size_t size)` | Allocates and zeroes memory |<br>
 
 #### Conversion Functions
 
