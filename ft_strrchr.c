@@ -2,17 +2,15 @@
 
 char *ft_strrchr(const char *s, int c)
 {
-	char *str;
 	int	slen;
 
-	str = (char *)s;
-	slen = ft_strlen(str);
+	slen = ft_strlen(s);
 	
 	while (slen >= 0)
 	{
-		if (str[slen] == c)
-			return (str + slen);
+		if (s[slen] == (unsigned char)c)
+			return ((char *)&s[slen]);
 		slen--;
 	}
-	return (NULL);
+	return (0);
 }

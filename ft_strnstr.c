@@ -3,14 +3,16 @@
 char    *ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t  i;
-	int     occr;
-	int     lneedle;
+	size_t	occr;
+	size_t	lneedle;
 
 	if (needle[0] == '\0')
 		return ((char *)haystack);
 	i = 0;
 	lneedle = ft_strlen(needle);
-	while (i < len - lneedle && haystack[i])
+	if (lneedle > len)
+    	return (NULL);
+	while (i + lneedle <= len && haystack[i])
 	{
 		occr = 0;
 		while (haystack[i + occr] && 
